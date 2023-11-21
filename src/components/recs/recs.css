@@ -1,0 +1,48 @@
+/* CSS for the BlueRectangleWithColumns component */
+.blue-rectangle-with-columns {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    color: white;
+  }
+  
+  .blue-rectangle {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .blue-text {
+    text-align: center;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .regular-text {
+    margin-top: 10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .blue-title {
+    color: blue;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  

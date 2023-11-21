@@ -1,0 +1,20 @@
+/* CSS for the SchoolButtons component */
+.school-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 500px;
+    align-items: center;
+  }
+  
+  .blue-button {
+    background-color: #49A1EF;
+    color: white;
+    border: none;
+    font-size: 50px;
+    padding: 30px 50px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  

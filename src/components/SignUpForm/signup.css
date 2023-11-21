@@ -1,0 +1,36 @@
+/* CSS for the RegistrationForm component */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-image {
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+  
+  .input-box {
+    width: 300px;
+    height: 30px;
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  .continue-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

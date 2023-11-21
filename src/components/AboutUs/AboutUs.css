@@ -1,0 +1,10 @@
+.about-us {
+  font-size: 36px; /* Increase the font size to make it bigger */
+  text-align: left;
+}
+
+.blue-text {
+  color: #49A1EF;/* Make the text blue */
+  font-size: 35px;
+  font-weight: bold;
+}
