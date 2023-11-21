@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   .button-container {
@@ -10,10 +14,17 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px; /* Adjust the gap between buttons as needed */
+    background-color: #49A1EF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 30px;
   }
   
   button {
-    background-color: blue;
+    background-color: #49A1EF;
     color: white;
     border: none;
     border-radius: 5px;

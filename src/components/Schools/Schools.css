@@ -5,6 +5,8 @@
     justify-content: flex-start;
     width: 50%;
     margin-left: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     align-items: center;
   }
   
@@ -14,7 +16,8 @@
     border: none;
     font-size: 50px;
     padding: 30px 50px;
-    margin: 5px;
+    margin-left: 40px;
+    margin-top: 10px;
     cursor: pointer;
   }
   

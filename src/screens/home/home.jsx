@@ -7,7 +7,6 @@ import FeaturesIncluded from '../../components/FeaturesIncluded/FeaturesIncluded
 import BlueSquareWithText from '../../components/SquareAndText/SquareAndText';
 import ContactBox from '../../components/ContactBox/ContactBox';
 import Bottom from '../../components/bottom/bottom';
-import UploadFile from '../../components/UploadFile/UploadFile';
 
 function Home() {
   return (

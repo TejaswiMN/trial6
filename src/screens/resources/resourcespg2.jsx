@@ -4,20 +4,16 @@ import "./resourcespg2.css";
 import BranchButton from '../../components/branches/Branches';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Resources3 from './resourcespg3';
+import Navbar from '../../components/Navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 function Resources2({schoolname}) {
   return (
     <div className="App">
+      <Navbar />
       <div className="wide-rounded-rectangle">{schoolname}</div>
-       <BranchButton branchname="CSE"/>
-       <Routes>
-         <Route path="./resourcespg3" element={<Resources3 />} />
-       </Routes>
-       <BranchButton branchname="ECE"/>
-       <BranchButton branchname="EEE"/>
-       <BranchButton branchname="Mechanical"/>
-       <BranchButton branchname="Chemical"/>
-       <BranchButton branchname="Civil"/>
+       <BranchButton branchname="@API TEAM: Put in the branches from your database and their corresponding routes below"/>
+       
     </div>
   );
 }
