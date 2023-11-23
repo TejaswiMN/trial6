@@ -11,7 +11,6 @@ const Blog = ({Name, Year, Title, Article}) => {
       </p>
       <p className="additional-bold-text">{Title}</p>
       <p className="paragraph">{Article}</p>
-      <button className="rounded-button">See More</button>
     </div>
     </div>
   );

@@ -2,6 +2,7 @@
 import React from 'react';
 import NotesLinks from '../../components/NotesLinks/NotesLinks';
 import Navbar from '../../components/Navbar/Navbar';
+import Recommendations from '../../components/recs/recs';
 
 function Resources4() {
   return (
@@ -9,6 +10,7 @@ function Resources4() {
       <Navbar />
       <div className='container1'>
       <NotesLinks />
+      <Recommendations />
       </div>  
     </div>
   );
