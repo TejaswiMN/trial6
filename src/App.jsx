@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from "axios";
 import './App.css';
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -12,6 +13,7 @@ import Start from './screens/start/start';
 import Resources2 from './screens/resources/resourcespg2';
 import Resources3 from './screens/resources/resourcespg3';
 import Resources4 from './screens/resources/resourcespg4';
+import Uploadpage from './screens/Uploadpage/Uploadpage';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path= "/home" element={<Home/>} /> 
           <Route path="/resources" element={<Resources/>} />
           <Route path="/alumni" element={<Alumni />} />
+          <Route path="/upload" element={<Uploadpage/>} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<SignUp />} />          
           <Route path="/resources/SOE" element={<Resources2 schoolname="School of Engineering" />} />
