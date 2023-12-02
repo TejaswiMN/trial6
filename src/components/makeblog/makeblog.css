@@ -1,0 +1,55 @@
+
+.info-with-button {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    font-size: 27px;
+  }
+  
+  .small-text {
+    font-size: 19px;
+    margin-left: 5px; 
+  }
+  
+  .additional-bold-text {
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 10px;
+  }
+  
+  .paragraph {
+    font-size: 19px;
+    margin-top: 10px;
+  }
+  
+  .rounded-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 20%;
+  }
+
+  .blue-rectangle {
+    background-color: #5fb2fa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 75%;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+  
+  .rounded-button:hover {
+    background-color: #333; /* Change color on hover if desired */
+  }
+  
+  .p{
+    background-color: #5fb2fa;
+  }

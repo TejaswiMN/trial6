@@ -1,6 +1,6 @@
  
   .wide-rounded-rectangle {
-    width: fit-content; /* Adjust the width as needed */
+    width: 200px; /* Adjust the width as needed */
     height: 100px; /* Adjust the height as needed */
     background-color: blue; /* Change the background color as needed */
     border-radius: 15px; /* Adjust the border radius to control the amount of rounding */

@@ -25,14 +25,22 @@ function App() {
           <Route path="/alumni" element={<Alumni />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<SignUp />} />          
-          <Route path="/resources/SOE" element={<Resources2 schoolname="School of Engineering" />} />
-          <Route path="/resources/SME" element={<Resources2 schoolname="School of Management and Entrepreneurship" />} />
-          <Route path="/resources/SNS" element={<Resources2 schoolname="School of Natural Sciences" />} />
-          <Route path="/resources/SHSS" element={<Resources2 schoolname="School of Humanities and Social Sciences" />} />
-          <Route path='/resources/SOE/cse' element={<Resources3 branch="CSE" />} />
-          <Route path='/putthepathlike/resources/scoolname/brnach/coursecode' element={<Resources4 course="CSE" /*pass all the required things from the database*//>} />
-         {/* API TEAM: Put in the routes to every other page you're creating */}
-        </Routes>
+          <Route path="/resources/SOE" element={<Resources2 schoolname="SOE" />} />
+          <Route path="/resources/SME" element={<Resources2 schoolname="SME" />} />
+          <Route path="/resources/SNS" element={<Resources2 schoolname="SNS" />} />
+          <Route path="/resources/SHSS" element={<Resources2 schoolname="SHSS" />} />
+          <Route path='/resources/SOE/CSE' element={<Resources3 branch="CSE" />} />
+          <Route path='/resources/SOE/ECE' element={<Resources3 branch="ECE" />} />
+          <Route path='/resources/SOE/Mechanical' element={<Resources3 branch="Mechanical" />} />
+          <Route path='/resources/SNS/math' element={<Resources3 branch="Mathematics" />} />
+          <Route path='/resources/SNS/biotech' element={<Resources3 branch="Bio-Technology" />} />
+          <Route path='/resources/SME/bms' element={<Resources3 branch="BMS" />} />
+          <Route path='/resources/SME/eco' element={<Resources3 branch="Economics" />} />
+          <Route path='/resources/SME/ecofin' element={<Resources3 branch="Economics and Finance" />} />
+          <Route path='/resources/SHSS/eng' element={<Resources3 branch="English" />} />
+          <Route path='/resources/SHSS/hist' element={<Resources3 branch="History" />} />
+          <Route path='/resources/SOE/cse/CSD101' element={<Resources4 />} />
+          </Routes>
     </div>
   );
 }

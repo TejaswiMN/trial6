@@ -1,37 +1,42 @@
 /* CSS for the RoundedRectangles component */
 .rounded-rectangles {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 600px;
-    height: fit-content;
-  }
-  
-  .light-blue-text {
-    color: #66a5e7;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-  }
-  
-  .rounded-button {
-    background-color: #66a5e7;
-    color: white;
-    border-radius: 10px;
-    margin: 10px 0;
-    width: 200px;
-  }
-  
-  .button-title {
-    font-weight: bold;
-    width: 200px;
-  }
-  
-  .button-subtitle {
-    margin-top: 5px;
-    width: 200px;
-  }
-  
+  border-radius: 10px;
+  width: 600px;
+  height: fit-content;
+  left: 250px;
+}
+
+.light-blue-text {
+  left: 110px;
+  color: #66a5e7;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: relative;
+  left: 250px;
+  align-content: space-around;
+}
+
+.rounded-button {
+  background-color: #66a5e7;
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 200px;
+  left: 250px;
+}
+
+.button-title {
+  color: black;
+  font-weight: bold;
+  width: 200px;
+  left: 250px;
+}
+
+.button-subtitle {
+  color: black;
+  margin-top: 5px;
+  width: 200px;
+}

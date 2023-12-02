@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import "./recs.css";
 
-const Recommendations = ({ boldText, regularText, youtubeLinks, files }) => {
+const Recommendations = ({ boldText, regularText, files }) => {
   return (
     <div className="blue-rectangle-with-columns">
       <div className="blue-rectangle">
@@ -12,6 +12,8 @@ const Recommendations = ({ boldText, regularText, youtubeLinks, files }) => {
         </div>
       </div>
       <div className="column">
+
+        {/*
         <h2 className="blue-title">Useful Links</h2>
         <ul className="youtube-links">
           {youtubeLinks.map((link, index) => (
@@ -22,6 +24,7 @@ const Recommendations = ({ boldText, regularText, youtubeLinks, files }) => {
             </li>
           ))}
         </ul>
+          */}
       </div>
       <div className="column">
         <h2 className="blue-title">Notes</h2>

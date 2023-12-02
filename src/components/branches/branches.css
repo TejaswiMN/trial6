@@ -1,34 +1,32 @@
 /* CSS for the DynamicComponent */
 .branchbutton {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Adjust the gap between buttons as needed */
-    background-color: #49A1EF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-left: 30px;
-  }
-  
-  button {
-    background-color: #49A1EF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin-left: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+  background-color: #49A1EF;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+button {
+  background-color: #49A1EF;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+}

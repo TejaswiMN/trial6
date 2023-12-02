@@ -7,7 +7,7 @@ const Blog = ({Name, Year, Title, Article}) => {
     <div className="blue-rectangle">
     <div className="info-with-button">
       <p className="bold-text">
-        {Name} <span className="small-text">Graduated {Year}</span>
+        {Name} <span className="small-text">Graduation Year: {Year}</span>
       </p>
       <p className="additional-bold-text">{Title}</p>
       <p className="paragraph">{Article}</p>

@@ -4,19 +4,19 @@ import "./courses.css";
 import { useNavigate } from 'react-router-dom';
 
 const RoundedRectangles = ({ branch, buttons }) => {
-
   const navigate = useNavigate();
-  const handlecourseClick = () => {
-    navigate('/putthepathlike/resources/scoolname/brnach/coursecode');   };
+
+  const handleCourseClick = (button) => {
+    navigate(`/resources/SOE/${branch}/${button}`);
+  };
 
   return (
     <div className="rounded-rectangles">
       <h2 className="light-blue-text">{branch}</h2>
       <div className="button-container">
-        {buttons.map((button, index) => (
-          <div key={index} className="rounded-button">
-            <div className="button-title">{button.courseCode} </div>
-            <button className="button-subtitle" onClick={handlecourseClick}>{button.courseName}</button>
+        {buttons.map((button, ind) => (
+          <div key={ind} className="rounded-button">
+            <button onClick={() => handleCourseClick(button)}>{button}</button>
           </div>
         ))}
       </div>
