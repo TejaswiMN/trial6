@@ -82,20 +82,54 @@ const userSchema = new mongoose.Schema({
       return res.status(500).json({ message: 'Login failed', error: error.message });
     }
   });
-  app.get('/user', async (req, res) => {
+  // app.get('/user', async (req, res) => {
+  //   try {
+  //     const { username } = req.session; 
+  //     // Assuming the username is stored in the session
+  //     print(req.session);
+  //     const user = await User.findOne({ username });
+  
+  //     if (!user) {
+  //       return res.status(404).json({ message: 'User not found' });
+  //     }
+  
+  //     const { name, branch, year, phoneNumber } = user;
+  //     return res.status(200).json({ name, branch, year, phoneNumber });
+  //   } catch (error) {
+  //     return res.status(500).json({ message: 'Failed to fetch user data', error: error.message });
+  //   }
+  // });
+
+  // GET request to fetch user data
+  app.get('/user/:username', async (req, res) => {
+    const { username } = req.params;
+  
     try {
-      const { username } = req.session; // Assuming the username is stored in the session
+      // Assuming 'nameFieldInDatabase' is the field where username is stored
+      const userData = await User.findOne({ name: username });
   
-      const user = await User.findOne({ username });
-  
-      if (!user) {
-        return res.status(404).json({ message: 'User not found' });
+      if (userData) {
+        // Respond with the user data if found
+        res.status(200).json(userData);
+      } else {
+        res.status(404).json({ error: 'User not found' });
       }
-  
-      const { name, branch, year, phoneNumber } = user;
-      return res.status(200).json({ name, branch, year, phoneNumber });
     } catch (error) {
-      return res.status(500).json({ message: 'Failed to fetch user data', error: error.message });
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
+  app.put('/user/:username', async (req, res) => {
+    const { username } = req.params;
+    const updatedUserData = req.body;
+  
+    try {
+      // Find the user by username and update the details
+      await User.findOneAndUpdate({ name: username }, updatedUserData);
+  
+      res.status(200).json({ message: 'User data updated successfully' });
+    } catch (error) {
+      res.status(500).json({ error: 'Internal server error' });
     }
   });
 

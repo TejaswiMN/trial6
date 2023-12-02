@@ -31,8 +31,10 @@ function Login() {
       });
 
       if (response.ok) {
-        const userData = await response.json();
-        localStorage.setItem('user', JSON.stringify(userData.user)); // Save user data in localStorage
+        // const userData = await response.json();
+        console.log(JSON.stringify(formData.username));
+        localStorage.setItem('username', formData.username); // Save username in localStorage
+        console.log('Stored in localStorage:', localStorage.getItem('username')); // Save user data in localStorage
         navigate('/home');
       } else {
         // Handle login failure
